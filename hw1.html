@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo App</title>
+    <link rel="stylesheet" href="hw1.css">
+</head>
+<body>
+    <h1>Todo App</h1>
+
+    <form id="todoForm">
+        <label for="title">Tiêu đề:</label>
+        <input type="text" id="title" required><br><br>
+
+        <label for="startDate">Thời gian bắt đầu:</label>
+        <input type="datetime-local" id="startDate" required><br><br>
+
+        <label for="endDate">Thời gian kết thúc:</label>
+        <input type="datetime-local" id="endDate" required><br><br>
+
+        <label for="type">Loại công việc:</label>
+        <select id="type">
+            <option value="Học tập">Học tập</option>
+            <option value="Làm việc">Làm việc</option>
+            <option value="Vui chơi">Vui chơi</option>
+            <option value="Khác">Khác</option>
+        </select><br><br>
+
+        <button type="submit">Thêm công việc</button>
+    </form>
+
+    <h2>Danh sách công việc</h2>
+    <table id="todoList">
+        <thead>
+            <tr>
+                <th>Tiêu đề</th>
+                <th>Thời gian bắt đầu</th>
+                <th>Thời gian kết thúc</th>
+                <th>Loại công việc</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="hw1.js"></script>
+</body>
+</html>

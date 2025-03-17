@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan ly nguoi dung</title>
+    <link rel="stylesheet" href="hw2.css">
+</head>
+<body>
+    <div class = "container">
+        <h2>Thêm Người Dùng</h2>
+        <form id="userForm">
+            <label for ="fullname">Họ và Tên</label>
+            <input type = "text" id="fullname" required>
+
+            <label for ="email">Email</label>
+            <input type = "email" id="email" required>
+
+            <label for ="phone">Số điện thoại</label>
+            <input type = "text" id="phoneNumber" required>
+
+            <label for ="age">Tuổi</label>
+            <input type = "number" id="age" required>
+
+            <label>Giới tính:</label>
+            <select id = "gender" required>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+            </select>
+
+            <label>Sở thích:</label>
+            <div class = "checkbox-group">
+                <label><input type= "checkbox" value = "Nghe nhạc">Nghe Nhạc</label>
+                <label><input type= "checkbox" value = "Đọc sách">Đọc Sách</label>
+                <label><input type= "checkbox" value = "Xem phim">Xem Phim</label>
+                <label><input type= "checkbox" value = "Du lịch">Du Lịch</label>
+                <label><input type= "checkbox" value = "Thể thao">Thể Thao</label>
+                <label><input type= "checkbox" value = "Gaming">Gaming</label>
+                <label><input type= "checkbox" value = "Khoa học">Khoa Học</label>
+                <label><input type= "checkbox" value = "Lập trình">Lập Trình</label>
+                <label><input type= "checkbox" value = "Thư giãn">Thư Giãn</label>
+                <label><input type= "checkbox" value = "Khác">Ăn</label>
+                <label><input type= "checkbox" value = "Tắm rửa">Tắm Rửa</label>
+                <label><input type= "checkbox" value = "Ngủ">Ngủ</label>
+            </div>
+            <button type="submit">Thêm người dùng</button>
+        </form>
+
+        <h2>Danh Sách Người Dùng</h2>
+        <table id = "userTable">
+            <thead>
+                <tr>
+                    <th>Họ và Tên</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Tuổi</th>
+                    <th>Giới tính</th>
+                    <th>Sở thích</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="hw2.js"></script>
+</body>
+</html>

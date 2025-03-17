@@ -1,0 +1,78 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+h2{
+    text-align: center;
+    color: #333;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select{
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chechbox_group{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.chechbox_group label{
+    margin-right: 15px;
+}
+
+button{
+    padding: 10px;
+    background: #c812aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover{
+    background: #a20c8c;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td{
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #f2f2f2;
+}
